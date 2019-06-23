@@ -1,25 +1,24 @@
-  @@ -0,0 +1,24 @@
-  #server:
-  #  port: 7411
-  spring:
-    application:
-      name: spring_boot_redis_mongo
-    thymeleaf:
+#server:
+#  port: 7411
+spring:
+  application:
+    name: spring_boot_redis_mongo
+  thymeleaf:
+    enabled: false
+  mvc:
+    favicon:
       enabled: false
-    mvc:
-      favicon:
-        enabled: false
-    profiles:
-      active:
-        - dev
-    cache:
-      type: REDIS
-    redis:
-      host: redis-11328.c91.us-east-1-3.ec2.cloud.redislabs.com
-      database: 0
-      port: 11328
-      password: Avpcl1hqIeHkp4JICW96UN8FkgQIy4wD
-    data:
-      mongodb:
-        database: test
-        uri: mongodb+srv://m220student:m220password@mflix-puhei.mongodb.net/test?maxPoolSize=50&wtimeoutMS=2500&connectTimeoutMS=2000
+  profiles:
+    active:
+      - dev
+  cache:
+    type: REDIS
+  redis:
+    host: #######
+    database: 0
+    port: #####
+    password: #####
+  data:
+    mongodb:
+      database: test
+      uri: #####
