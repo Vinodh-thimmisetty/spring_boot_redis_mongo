@@ -47,6 +47,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
+    @CachePut(value = "Employee_Cache", key = "#employee.id")
     public Employee save(Employee employee) {
         return employeeRepository.save(employee);
     }
