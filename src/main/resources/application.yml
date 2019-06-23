@@ -1,0 +1,24 @@
+#server:
+#  port: 7411
+spring:
+  application:
+    name: spring_boot_redis_mongo
+  thymeleaf:
+    enabled: false
+  mvc:
+    favicon:
+      enabled: false
+  profiles:
+    active:
+      - dev
+  cache:
+    type: REDIS
+  redis:
+    host: #######
+    database: 0
+    port: #####
+    password: #####
+  data:
+    mongodb:
+      database: test
+      uri: #####
